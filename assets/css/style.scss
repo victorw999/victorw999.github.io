@@ -2,3 +2,90 @@
 ---
 
 @import "jekyll-theme-minimal";
+
+header.profile_header {
+  h1.name {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    border: 10px solid lightgray;
+    border-radius: 50%;
+    border-color: whitesmoke;
+  }
+}
+
+a {
+  color: black;
+  &:hover {
+    color: #990000;
+  }
+}
+
+section {
+  h1,
+  h2,
+  h3,
+  h4 {
+    /* hover animation */
+  }
+  h2 {
+    padding-bottom: 4px;
+    border-bottom: 2px solid #e5e5e5;
+    &:hover {
+      border-bottom: 2px solid #990000;
+      a {
+        color: #990000;
+      }
+    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   top: 0;
+    //   bottom: 0;
+    //   background-image: linear-gradient(90deg, #990000, #f00);
+    //   background-size: 0 2px;
+    //   background-repeat: no-repeat;
+    //   background-position: left bottom;
+    //   transition: background-size 0.3s ease-in;
+    // }
+
+    // &:hover::before {
+    //   background-size: 100% 2px;
+    // }
+  }
+}
+
+/*
+
+a,
+    a:link,
+    a:visited {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+      padding-bottom: 4px;
+    }
+
+    a::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      background-image: linear-gradient(90deg, black, gray);
+      background-size: 0 2px;
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      transition: background-size 0.3s ease-in;
+    }
+
+    a:hover::before {
+      background-size: 100% 2px;
+    }
+      
+    */

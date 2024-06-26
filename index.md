@@ -2,122 +2,47 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Projects
 
-[Link to another page](./another-page.html).
+## [Custom React/Shopify App](https://github.com/victorw999/vite-shopify-react-hydrogen-theme-ToM2U-)
+Leveraging React, Redux, and Router to build custom app that fetch shopify store data using Admin/Storefront GraphQL APIs  
 
-There should be whitespace between paragraphs.
+### Features:
+- Fetch bestsellers with Shopify Storefront APIs
+- Fetch customers with Shopify Admin APIs
+- Customer contact directory
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+### Technology:
+ - React, Redux, React-router
+ - Tailwindcss, Framer-motion
+ - Vite, Typescript
 
-# Header 1
+### Links:
+ - [Video Demo](https://youtu.be/-xxTLYyh8go) 
+ - [Preview Theme](https://vzine.myshopify.com/?_ab=0&_fd=0&_sc=1&key=abb25ec7632898eec68dd2f4a0205b280976da9fa4648578672a32c0f70e913b&preview_theme_id=134018531428)  `Store Password: 1234` 
+ - [Code](https://github.com/victorw999/vite-shopify-react-hydrogen-theme-ToM2U-)
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+### ![React Shopify app](assets/img/react_shopify_app_demo.gif)
 
 
-### Definition lists can be used with HTML syntax.
+## [Warehouse Management System (react/firebase)](https://github.com/victorw999/warehouse_demo)    
+Manage & track warehouse packing/shipping tasks in order to streamline the operation for online orders.
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+### Features:
+- Track workers task duration
+- Realtime inspection by supervisor
+- Realtime inventory alert
+- Worker efficiency report
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+### Technology:
+ - React, Redux
+ - Materialize: Mobile-first layout
+ - Firebase: User accounts & authentication
+ - Firestore: NoSQL Database
 
-```
-The final element.
-```
+### Links:
+ - [Video Demo](https://youtu.be/xh8hlcQzXGM) 
+ - [Code](https://github.com/victorw999/warehouse_demo)    
+
+### ![Warehouse app](assets/img/shortdemo1.gif)
+
