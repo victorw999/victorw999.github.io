@@ -1,16 +1,25 @@
 @import "fonts";
 @import "rouge-github";
 
+:root {
+  --bg-color: #eee5e9;
+  --font-color: #444849;
+  --accent-color-1: #00ced1;
+  --accent-color-2: #51b0a8;
+  --accent-color-3: #e8342b;
+  --accent-color-4: #f0c987;
+}
 body {
-  background-color: #fff;
+  background-color: var(--bg-color);
   padding: 50px;
   font:
-    14px/1.5 "Noto Sans",
+    14px/1.5 "Quicksand",
+    "Noto Sans",
     "Helvetica Neue",
     Helvetica,
     Arial,
     sans-serif;
-  color: #727272;
+  color: var(--font-color);
   font-weight: 400;
 }
 
@@ -20,7 +29,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: #222;
+  font-family: "Anybody", "Noto Sans", sans-serif;
+  color: var(--font-color);
   margin: 0 0 20px;
 }
 
@@ -44,18 +54,18 @@ h1 {
 }
 
 h2 {
-  color: #393939;
+  color: var(--font-color);
 }
 
 h3,
 h4,
 h5,
 h6 {
-  color: #494949;
+  color: var(--font-color);
 }
 
 a {
-  color: #267cb9;
+  color: var(--font-color);
   text-decoration: none;
 }
 

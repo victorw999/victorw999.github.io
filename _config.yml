@@ -1,6 +1,7 @@
 # title: Victor Wong
 title: Minimal
 # logo: assets/img/victor-linked-in-888.jpg
+logo: assets/img/logo.png
 description: Web developer who thrives on experimenting with cutting-edge design and technology, and loves to help others achieve success. Let's build something amazing together!
 show_downloads: true
 theme: jekyll-theme-minimal 

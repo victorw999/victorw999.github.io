@@ -14,13 +14,16 @@ header.profile_header {
     border: 10px solid lightgray;
     border-radius: 50%;
     border-color: whitesmoke;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
   }
 }
 
 a {
-  color: black;
+  color: var(--font-color);
   &:hover {
-    color: #990000;
+    color: var(--accent-color-2);
   }
 }
 
@@ -33,32 +36,66 @@ section {
   }
   h2 {
     padding-bottom: 4px;
-    border-bottom: 2px solid #e5e5e5;
-    &:hover {
-      border-bottom: 2px solid #990000;
-      a {
-        color: #990000;
-      }
-    }
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   width: 100%;
-    //   top: 0;
-    //   bottom: 0;
-    //   background-image: linear-gradient(90deg, #990000, #f00);
-    //   background-size: 0 2px;
-    //   background-repeat: no-repeat;
-    //   background-position: left bottom;
-    //   transition: background-size 0.3s ease-in;
-    // }
-
-    // &:hover::before {
-    //   background-size: 100% 2px;
+    @extend .accent_heading;
+    // border-bottom: 2px solid #e5e5e5;
+    // &:hover {
+    //   border-bottom: 2px solid var(--accent-color-3);
+    //   a {
+    //     color: var(--accent-color-3);
+    //   }
     // }
   }
 }
 
+.accent_heading {
+  $accentColor: var(--accent-color-2);
+  $unit: 15px;
+  $delta: 5px;
+  $duration: 0.3s;
+
+  display: inline-block;
+  position: relative;
+  background: var(--bg-color);
+  padding: 0px;
+  margin: $unit 0px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    display: block;
+    background-color: var(--bg-color);
+    background-image: linear-gradient(45deg, transparent 49%, $accentColor 50%, transparent 51%);
+    background-size: 5px 5px;
+    top: -$unit;
+    left: -$unit;
+    right: -$unit;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -$unit;
+    z-index: -1;
+    transition: all $duration ease-in-out;
+  }
+  transition: all $duration ease-in-out;
+
+  &:hover {
+    background: $accentColor;
+    padding: $unit - $delta 0px;
+    margin: $unit + $delta 0;
+    a {
+      color: var(--bg-color);
+    }
+    &::before {
+      top: -($unit + $delta);
+      bottom: -($unit + $delta);
+    }
+  }
+  a {
+    color: $accentColor;
+  }
+}
 /*
 
 a,
