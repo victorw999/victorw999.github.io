@@ -1,4 +1,17 @@
-# test Projects
+# Development files
+
+### profile input:
+  - _config.yml
+### section input:
+  - index.md
+### layout:
+  - _layouts\default.html
+### css entry: 
+  - assets\css\style.scss
+  - _sass\jekyll-theme-minimal.scss
+
+
+# Projects
 
 ## [Custom React/Shopify App](https://github.com/victorw999/vite-shopify-react-hydrogen-theme-ToM2U-)
 Leveraging React, Redux, and Router to build custom app that fetch shopify store data using Admin/Storefront GraphQL APIs  
