@@ -126,3 +126,35 @@ a,
     }
       
     */
+
+/* Noise background */
+.noise,
+.bg_svg {
+  position: fixed;
+  z-index: 9999;
+  top: -300%;
+  left: -150%;
+  height: 600%;
+  width: 600%;
+}
+.bg_svg {
+  left: -160%;
+  z-index: -9999;
+  opacity: 0.6;
+  width: 100vw;
+  height: 100vw;
+  top: 0px;
+  border: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.noise {
+  -webkit-animation: grain 7s steps(10) infinite;
+  animation: grain 7s steps(10) infinite;
+  background-image: url(/assets/img/noise.png);
+  background-size: 200px;
+  background-repeat: repeat;
+  opacity: 0.25;
+  pointer-events: none;
+}
