@@ -1,12 +1,12 @@
 # Development files
 
-### profile input:
+### profile content entry point:
   - _config.yml
-### section input:
+### section content entry point:
   - index.md
 ### layout:
   - _layouts\default.html
-### css entry: 
+### css entry point: 
   - assets\css\style.scss
   - _sass\jekyll-theme-minimal.scss
 
