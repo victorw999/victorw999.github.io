@@ -73,13 +73,6 @@ section {
   h2 {
     padding-bottom: 4px;
     @extend .accent_heading;
-    // border-bottom: 2px solid #e5e5e5;
-    // &:hover {
-    //   border-bottom: 2px solid var(--accent-color-3);
-    //   a {
-    //     color: var(--accent-color-3);
-    //   }
-    // }
   }
 }
 
