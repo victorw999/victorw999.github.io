@@ -27,6 +27,33 @@ header.profile_header {
   p {
     margin-top: 16.8px;
   }
+  .network_links {
+    background: var(--accent-color-2);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    border-radius: 5px;
+
+    .link_item {
+      display: inline-flex;
+      align-items: center;
+      color: var(--bg-color);
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--bg-color);
+      margin: 0px 10px;
+      &.icon_github path,
+      &.icon_linkedin path.icon_bg {
+        fill: var(--bg-color);
+      }
+      &.icon_linkedin path.icon_txt {
+        fill: var(--accent-color-2);
+      }
+    }
+  }
 }
 
 a {
