@@ -24,6 +24,28 @@ Leveraging React, Redux, and Router to build custom app that fetch shopify store
 
 ### ![React Shopify app](assets/img/react_shopify_app_demo.gif)
 
+## [Custom Storefronts with Headless Framework](https://github.com/victorw999/shopiy-headless-react-x6rzqeVa)    
+Decoupled react landing page (hosted separately) interacts with the Shopify Storefront API for data retrieval.
+
+### Features:
+- Utilizing Shopify Storefront API for order processing 
+- Custom-built frontend touchpoints
+- Real-time products updates with Web hooks
+- Secure payment processing through Shopify Payments
+- Hosted on Netlify
+
+### Technology:
+ - React, React-router
+ - Tailwindcss, chakra-ui, 
+ - Shopify-buy SDK
+
+### Links:
+ - [Video Demo](https://youtu.be/dSX9uwD-H7E) 
+ - [Preview Theme](https://shopiy-headless-react-x6rzqeva.netlify.app) 
+ - [Code](https://github.com/victorw999/shopiy-headless-react-x6rzqeVa)
+
+
+### ![Headless storefront](assets/img/shopify_headless_demo.gif)
 
 ## [Warehouse Management System (react/firebase)](https://github.com/victorw999/warehouse_demo)    
 Manage & track warehouse packing/shipping tasks in order to streamline the operation for online orders.

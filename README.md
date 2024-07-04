@@ -33,7 +33,7 @@ Leveraging React, Redux, and Router to build custom app that fetch shopify store
 
 ### ![React Shopify app](assets/img/react_shopify_app_demo.gif)
 
-
+ 
 ## [Warehouse Management System (react/firebase)](https://github.com/victorw999/warehouse_demo)    
 Manage & track warehouse packing/shipping tasks in order to streamline the operation for online orders.
 
