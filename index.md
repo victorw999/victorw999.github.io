@@ -29,7 +29,7 @@ Decoupled react landing page (hosted separately) interacts with the Shopify Stor
 
 ### Features:
 - Utilizing Shopify Storefront API for order processing 
-- Custom-built frontend touchpoints
+- Custom-built front-end touchpoints
 - Real-time products updates with Web hooks
 - Secure payment processing through Shopify Payments
 - Hosted on Netlify
