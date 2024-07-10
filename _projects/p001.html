@@ -1,0 +1,49 @@
+---
+title: project 1
+permalink: /projects/p001/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script>
+
+      //  window.test="{{site.toggl_api}}"
+
+      /* toggl api call */
+
+      const api_token = "{{site.toggl_api}}"
+      const credentials = `${api_token}:api_token`;
+
+      console.log('===> credentials', credentials)
+
+      const encodedCredentials = btoa(new TextEncoder().encode(credentials));
+
+      console.log('===> encodedCredentials', encodedCredentials)
+
+      fetch("https://api.track.toggl.com/api/v9/me/time_entries", {
+      method: "GET",
+      headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Basic ${encodedCredentials}`
+      },
+      })
+      .then((resp) => resp.json())
+      .then((json) => {
+        console.log(json);
+      })
+      .catch(err => console.error(err))
+
+
+
+    </script>
+</head>
+<body>
+    <h1>Welcome to Project 1</h1>
+    <script src="/assets/js/p001.js"></script>
+</body>
+</html>

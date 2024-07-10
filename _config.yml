@@ -5,3 +5,8 @@ logo: assets/img/victor-linked-in-888.jpg
 description: Web developer who thrives on experimenting with cutting-edge design and technology, and loves to help others achieve success. Let's build something amazing together!
 show_downloads: true
 theme: jekyll-theme-minimal 
+# collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/

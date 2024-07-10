@@ -1,3 +1,7 @@
+# Dev enviroment
+- `bundle exec jekyll serve --livereload` (☀Preview locally w/ Jekyll )
+
+
 # Development files
 
 ### profile content entry point:
