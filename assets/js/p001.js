@@ -11,19 +11,15 @@ window.addEventListener('load', function () {
 
 function callTogglAPI() {
   const api_token = window.hunxiaoAPI
-  const credentials = `${api_token}:api_token`;
+  const credentials = btoa(`${api_token}:api_token`);
 
   console.log('===> credentials', credentials)
-
-  const encodedCredentials = btoa(new TextEncoder().encode(credentials));
-
-  console.log('===> encodedCredentials', encodedCredentials)
 
   fetch("https://api.track.toggl.com/api/v9/me/time_entries", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": `Basic ${encodedCredentials}`
+      "Authorization": `Basic ${credentials}`
     },
   })
     .then((resp) => resp.json())
