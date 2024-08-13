@@ -1,0 +1,15 @@
+body{ 
+  background-color: #2A3329;
+  color: white;
+  font-family: monospace;
+}
+.vic_github_calendar{
+  max-width: 800px;
+  margin: auto;
+  margin-top: 9%;
+}
+
+.contrib-column
+.contrib-number, a { 
+  color: #F1F9F0;
+}
