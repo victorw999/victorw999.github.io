@@ -5,18 +5,18 @@ layout: default
 # Projects
 
 <!-- CONTENTFUL_START -->
-## [React Multi-Variants Selector](https://github.com/victorw999/vite-shopify-react-hydrogen-theme-ToM2U-?tab=readme-ov-file#2-pdp-app-one-step-multi-variant-add-to-cart)
-Shopify custom block created with React: Multi-variant, multi-quantity ‘Add to Cart’ streamlines complex product purchases for better UX. The functionality is particularly beneficial for specialized products
+## [React Multi-Variants Selectors](https://github.com/victorw999/vite-shopify-react-hydrogen-theme-ToM2U-?tab=readme-ov-file#2-pdp-app-one-step-multi-variant-add-to-cart)
+Shopify custom block created with React: Multi-variants, multi-quantity ‘Add to Cart’ streamlines complex product purchases for better UX. The functionality is particularly beneficial for specialized products
 
 ### Features:
-- Combining multi-variant and quantity selection into a single control
-- Supporting custom bundles via metafields, unifying media display
+- Combining multi-variant and quantity selection into a single control.
+- Supporting custom bundles via metafields, unifying media display of 2 products!
 - Using a dynamically injected entry point to add all selected items to the cart in one Shopify AJAX call
 
 ### Technology:
 - React, Redux, React-router
 - Pub/Sub: Sync React+vanilla JS
-- Tailwindcss, Framer-motion
+- TailwindCSS, Framer-motion
 - Vite
 
 ### Links:
