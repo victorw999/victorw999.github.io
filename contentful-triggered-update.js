@@ -7,10 +7,7 @@ const README_PATH = join(__dirname, 'index.md');
 
 const {SPACE_ID, AUTH_TOKEN} = process.env;
 
-// Debug logs
-console.log('Environment variables :');
-console.log('SPACE_ID:', SPACE_ID ? 'Present' : 'Missing');
-console.log('AUTH_TOKEN:', AUTH_TOKEN ? 'Present' : 'Missing');
+
 
 /**
  * Fetch data from Contentful and return GraphQL data
@@ -112,7 +109,7 @@ function convertRichTextToMarkdown(json) {
   const items = json.content;
   return items.map((item) => {
     if (item.nodeType === 'heading-3') {
-      return `### ${item.content[0].value}`;
+      return `\n### ${item.content[0].value}`;
     } else if (item.nodeType === 'unordered-list') {
       const listItems = item.content;
       return listItems.map((listItem) => {
