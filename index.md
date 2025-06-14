@@ -116,9 +116,9 @@ Shopify custom block created with React: Multi-variant, multi-quantity ‘Add to
 - Vite
 
 ### Links:
-- Video Demo (https://youtu.be/if6xtNEA810)
-- Preview Theme (https://vzine.myshopify.com/products/wild-deodorant-case?preview_theme_id=134018531428)  Store password: 1234
-- Code (https://github.com/victorw999/vite-shopify-react-hydrogen-theme-ToM2U-?tab=readme-ov-file#2-pdp-app-one-step-multi-variant-add-to-cart)
+- [Video Demo](https://youtu.be/if6xtNEA810)
+- [Preview Theme](https://vzine.myshopify.com/products/wild-deodorant-case?preview_theme_id=134018531428)  Store password: 1234
+- [Code](https://github.com/victorw999/vite-shopify-react-hydrogen-theme-ToM2U-?tab=readme-ov-file#2-pdp-app-one-step-multi-variant-add-to-cart)
 
 ![react pdp multi selector gif](https://images.ctfassets.net/db6gfg5vs1vk/3jk1nwe5qICgzKfjDJAvjB/a8e687c5f921e88cd20c529bd01c1862/react_pdp_multi_selector.gif)
           
@@ -136,9 +136,9 @@ Leveraging React, Redux, and Router to build custom app that fetch shopify store
 - Vite, Typescript
 
 ### Links:
-- Video Demo (https://youtu.be/-xxTLYyh8go)
-- Preview Theme (https://vzine.myshopify.com/?preview_theme_id=134018531428)   Store Password: 1234
-- Code (https://github.com/victorw999/vite-shopify-react-hydrogen-theme-ToM2U-?tab=readme-ov-file#1-react-app-for-shopify-store)
+- [Video Demo](https://youtu.be/-xxTLYyh8go)
+- [Preview Theme](https://vzine.myshopify.com/?preview_theme_id=134018531428)   Store Password: 1234
+- [Code](https://github.com/victorw999/vite-shopify-react-hydrogen-theme-ToM2U-?tab=readme-ov-file#1-react-app-for-shopify-store)
 
 ![react shopify app demo](https://images.ctfassets.net/db6gfg5vs1vk/2eGpwsZkF6uzBIUfE5LtUz/01e134f12aa9211dfce132c4fcd25b13/react_shopify_app_demo.gif)
           
@@ -158,9 +158,9 @@ Decoupled react landing page (hosted separately) interacts with the Shopify Stor
 - Shopify-buy SDK
 
 ### Links:
-- Video Demo (https://youtu.be/dSX9uwD-H7E)
-- Preview Theme (https://shopiy-headless-react-x6rzqeva.netlify.app/)
-- Code (https://github.com/victorw999/shopiy-headless-react-x6rzqeVa)
+- [Video Demo](https://youtu.be/dSX9uwD-H7E)
+- [Preview Theme](https://shopiy-headless-react-x6rzqeva.netlify.app/)
+- [Code](https://github.com/victorw999/shopiy-headless-react-x6rzqeVa)
 
 ![shopify headless demo](https://images.ctfassets.net/db6gfg5vs1vk/7r7xLm5WB8bKpGv0pFVBu5/1e599c66bc3490c15539d2b0a67c66df/shopify_headless_demo.gif)
           
@@ -180,8 +180,8 @@ Manage & track warehouse packing/shipping tasks in order to streamline the opera
 - Firestore: NoSQL Database
 
 ### Links:
-- Video Demo (https://youtu.be/xh8hlcQzXGM)
-- Code (https://github.com/victorw999/warehouse_demo)
+- [Video Demo](https://youtu.be/xh8hlcQzXGM)
+- [Code](https://github.com/victorw999/warehouse_demo)
 
 ![shortdemo1](https://images.ctfassets.net/db6gfg5vs1vk/73PekG3Uo3ZjqgQH9NlKXZ/8b81c9bdf27a0218ddec62f2b817a77c/shortdemo1.gif)
           
