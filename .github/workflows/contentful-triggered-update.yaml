@@ -1,0 +1,40 @@
+name: contentful changes trigger github portfolio's readme/index.md
+# This workflow is triggered on pushes to the repository.
+on:
+  push:
+  repository_dispatch:
+    types: [publish-event]
+
+# Add concurrency to prevent multiple runs
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  contentful-update:
+    name: Generate and commit readme
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - run: npm install
+
+      - run: node ./contentful-triggered-update.js
+        env:
+          SPACE_ID: ${{ secrets.SPACE_ID }}
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+
+      - run: |
+          git status
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "contentful triggered update: index.md"
+          git push
+
+      # Trigger CI workflow after contentful update
+      - name: Trigger CI workflow
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          event-type: contentful-update-complete

@@ -5,3 +5,4 @@ Gemfile.lock
 .jekyll-cache
 _env.yml
 hunxiao.js
+node_modules

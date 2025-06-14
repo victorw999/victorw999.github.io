@@ -99,3 +99,6 @@ Manage & track warehouse packing/shipping tasks in order to streamline the opera
 
 ### ![Warehouse app](assets/img/shortdemo1.gif)
 
+# More
+<!-- CONTENTFUL_START -->
+<!-- CONTENTFUL_END -->
