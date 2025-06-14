@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
 
       - run: npm install
 
@@ -31,6 +33,8 @@ jobs:
           git add .
           git commit -m "contentful triggered update: index.md"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
 
       # Trigger CI workflow after contentful update
       - name: Trigger CI workflow
