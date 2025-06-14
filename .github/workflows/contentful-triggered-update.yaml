@@ -21,13 +21,26 @@ jobs:
 
       - run: npm install
 
-      - run: node ./contentful-triggered-update.js
+      - name: Update content from Contentful
+        run: node ./contentful-triggered-update.js
         env:
           SPACE_ID: ${{ secrets.SPACE_ID }}
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+        continue-on-error: true
 
-      - run: |
+      - name: Check for changes
+        id: git-check
+        run: |
           git status
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push if changes exist
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
@@ -38,7 +51,8 @@ jobs:
 
       # Trigger CI workflow after contentful update
       - name: Trigger CI workflow
+        if: steps.git-check.outputs.changes == 'true'
         uses: peter-evans/repository-dispatch@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
           event-type: contentful-update-complete
