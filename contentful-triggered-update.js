@@ -121,7 +121,7 @@ function convertRichTextToMarkdown(json) {
             if (paragraphItem.nodeType === 'hyperlink') {
               const hyperlinkText = paragraphItem.content[0].value;
               const hyperlinkUrl = paragraphItem.data.uri;
-              return `${hyperlinkText} (${hyperlinkUrl})`;
+              return `[${hyperlinkText}](${hyperlinkUrl})`;
             }
             if (paragraphItem.nodeType === 'text') {
               return paragraphItem.value || '';

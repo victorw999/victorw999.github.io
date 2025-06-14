@@ -24,4 +24,13 @@
         document.addEventListener("touchstart", gestureStart, false);
         document.addEventListener("touchend", gestureEnd, false);
     }
+
+    // Fix scaling issues with certain browsers
+    var elements = document.getElementsByTagName('*');
+    for (var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+        if (element.offsetWidth > document.documentElement.clientWidth) {
+            element.style.maxWidth = '100%';
+        }
+    }
 })(document);

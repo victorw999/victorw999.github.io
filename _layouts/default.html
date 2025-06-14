@@ -8,10 +8,7 @@
   <!-- google custom fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
-    rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,8 +25,7 @@
 <body>
   <div class="wrapper">
     <header class="profile_header">
-      <h1 class="name"><a href="{{ " /" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a>
-      </h1>
+      <h1 class="name"><a href="{{ "/" | relative_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
       {% if site.logo %}
       <img src="{{site.logo | relative_url}}" alt="Logo" />
@@ -53,7 +49,6 @@
           linkedin</a>
       </p>
 
-
       {% if site.show_downloads %}
       <ul class="downloads">
         <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
@@ -63,9 +58,7 @@
       {% endif %}
     </header>
     <section>
-
       {{ content }}
-
     </section>
     <footer>
       {% if site.github.is_project_page %}
@@ -78,7 +71,7 @@
     {% include bg_svg_1.html %}
     {% include bg_shape_1.html %}
   </div>
-  <script src="{{ " /assets/js/scale.fix.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
 </body>
 
 </html>
