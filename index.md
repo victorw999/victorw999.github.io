@@ -117,7 +117,7 @@ Shopify custom block created with React: Multi-variant, multi-quantity ‘Add to
 
 ### Links:
 - Video Demo (https://youtu.be/if6xtNEA810)
-- Preview Theme (https://vzine.myshopify.com/products/wild-deodorant-case?preview_theme_id=134018531428)  | Store password: 1234
+- Preview Theme (https://vzine.myshopify.com/products/wild-deodorant-case?preview_theme_id=134018531428)  Store password: 1234
 - Code (https://github.com/victorw999/vite-shopify-react-hydrogen-theme-ToM2U-?tab=readme-ov-file#2-pdp-app-one-step-multi-variant-add-to-cart)
 
 ![react pdp multi selector gif](https://images.ctfassets.net/db6gfg5vs1vk/3jk1nwe5qICgzKfjDJAvjB/a8e687c5f921e88cd20c529bd01c1862/react_pdp_multi_selector.gif)
@@ -137,7 +137,7 @@ Leveraging React, Redux, and Router to build custom app that fetch shopify store
 
 ### Links:
 - Video Demo (https://youtu.be/-xxTLYyh8go)
-- Preview Theme (https://vzine.myshopify.com/?preview_theme_id=134018531428)  | Store Password: 1234
+- Preview Theme (https://vzine.myshopify.com/?preview_theme_id=134018531428)   Store Password: 1234
 - Code (https://github.com/victorw999/vite-shopify-react-hydrogen-theme-ToM2U-?tab=readme-ov-file#1-react-app-for-shopify-store)
 
 ![react shopify app demo](https://images.ctfassets.net/db6gfg5vs1vk/2eGpwsZkF6uzBIUfE5LtUz/01e134f12aa9211dfce132c4fcd25b13/react_shopify_app_demo.gif)
