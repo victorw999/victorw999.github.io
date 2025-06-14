@@ -7,6 +7,11 @@ const README_PATH = join(__dirname, 'index.md');
 
 const {SPACE_ID, AUTH_TOKEN} = process.env;
 
+// Debug logs
+console.log('Environment variables:');
+console.log('SPACE_ID:', SPACE_ID ? 'Present' : 'Missing');
+console.log('AUTH_TOKEN:', AUTH_TOKEN ? 'Present' : 'Missing');
+
 /**
  * Fetch data from Contentful and return GraphQL data
  *
@@ -14,8 +19,11 @@ const {SPACE_ID, AUTH_TOKEN} = process.env;
  */
 async function fetchVicProjects() {
   try {
+    const url = `https://graphql.contentful.com/content/v1/spaces/${SPACE_ID}`;
+    console.log('Making request to:', url);
+
     const {body} = await got(
-      `https://graphql.contentful.com/content/v1/spaces/${SPACE_ID}`,
+      url,
       {
         method: 'POST',
         headers: {
@@ -54,10 +62,15 @@ async function fetchVicProjects() {
       }
     );
 
+    console.log('Response received successfully');
     const projects = JSON.parse(body).data.pageProjectListCollection.items[0].projectsCollection.items;
     return projects;
   } catch (error) {
-    console.error(error);
+    console.error('Error details:', {
+      message: error.message,
+      code: error.code,
+      response: error.response?.body
+    });
     throw error;
   }
 }
