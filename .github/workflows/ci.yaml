@@ -1,3 +1,14 @@
+# The CI process:
+
+# 1. First runs bootstrap to:
+# Set up the Ruby environment
+# Install all dependencies
+
+# 2. Then runs cibuild to:
+# Build your Jekyll site, primarily index.md's demo projects
+# Validate HTML and links
+# Check code style
+# Build your theme
 on:
   pull_request:
     types: [opened, synchronize]

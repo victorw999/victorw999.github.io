@@ -22,7 +22,9 @@ jobs:
       - run: npm install
 
       - name: Update content from Contentful
+        # parse contentful data and update index.md
         run: node ./contentful-triggered-update.js
+
         env:
           SPACE_ID: ${{ secrets.SPACE_ID }}
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
@@ -49,7 +51,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
 
-      # Trigger CI workflow after contentful update
+      # Trigger CI workflow(ci.yaml) after contentful update
       - name: Trigger CI workflow
         if: steps.git-check.outputs.changes == 'true'
         uses: peter-evans/repository-dispatch@v2
