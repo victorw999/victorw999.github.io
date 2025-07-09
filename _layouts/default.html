@@ -5,6 +5,11 @@
   <title>Victor Wong</title>
   <link rel="icon" type="image/x-icon" href="/assets/css/google_icon.ico">
 
+  <!-- Apple Touch Icon -->
+  {% if site.apple_touch_icon %}
+  <link rel="apple-touch-icon" href="{{ site.apple_touch_icon | relative_url }}">
+  {% endif %}
+
   <!-- google custom fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
