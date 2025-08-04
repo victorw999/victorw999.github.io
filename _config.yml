@@ -9,3 +9,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+
+plugins:
+  - jekyll-target-blank
