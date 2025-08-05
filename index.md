@@ -9,7 +9,7 @@ layout: default
 Shopify custom block created with React: Multi-variants, multi-quantity ‘Add to Cart’ streamlines complex product purchases for better UX. The functionality is particularly beneficial for specialized products
 
 ### Features:
-- Combining multiple variant selectors and quantity selectors into a single control.
+- Combining multiple variants selectors and quantity selectors into a single control.
 - Supporting custom bundles via metafields, unifying media display of 2 products!
 - Using a dynamically injected entry point to add all selected items to the cart in one Shopify AJAX call
 
