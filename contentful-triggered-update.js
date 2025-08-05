@@ -138,6 +138,7 @@ function convertRichTextToMarkdown(json) {
  * @return  {Promise}
  */
 async function main() {
+  console.log('>>> contentful-triggered-update.js ');
   // read README.md
   const readme = await readFile(README_PATH, 'utf8');
 
