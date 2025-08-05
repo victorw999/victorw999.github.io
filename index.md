@@ -11,7 +11,7 @@ Shopify custom block created with React: Multi-variants, multi-quantity ‘Add t
 ### Features:
 - Combining multiple variants selectors and quantity selectors into a single control element.
 - Supporting custom bundles via metafields (metaobjects), unifying media display of 2 products!
-- Using a dynamically injected entry point to add all selected items to the cart in one Shopify AJAX call
+- Using a dynamically injected entry point to add all selected items to the cart in one Shopify AJAX call!
 
 ### Technology:
 - React, Redux, React-router
