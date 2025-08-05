@@ -11,4 +11,4 @@ collections:
     permalink: /projects/:path/
 
 # plugins: []
-plugins: ['jekyll-target-blank']
+plugins: []
