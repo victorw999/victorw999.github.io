@@ -15,7 +15,7 @@ Shopify custom block created with React: Multi-variants, multi-quantity ‘Add t
 
 ### Technology:
 - React, Redux, React-router
-- Pub/Sub: Sync React+Vanilla JS
+- Pub/Sub: Sync React + Vanilla JS
 - TailwindCSS, Framer-motion
 - Vite
 
